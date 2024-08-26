@@ -252,8 +252,8 @@ def backend_compile(
     built_c = mlir.module_to_bytecode(module)
   else:
     built_c = module
-    logging.info("HLO module: %s", str(module))
-    logging.info("HLO module string: %s", built_c)
+  logging.info("HLO module: %s", str(module))
+  logging.info("HLO module string: %s", built_c)
 
   try:
     # we use a separate function call to ensure that XLA compilation appears
